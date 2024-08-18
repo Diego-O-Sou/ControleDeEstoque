@@ -15,7 +15,7 @@ public class ControleEstoque : IDisposable
         connection.Open();
     }
 
-    // Método para criar um novo produto
+    // Método para criar um novo produtoa
     public void CriarProduto(string nome, string descricao, decimal valor, DateTime validade, int quantidade)
     {
         string query = "INSERT INTO Produtos (nome, descricao, valor, validade, quantidade) VALUES (@nome, @descricao, @valor, @validade, @quantidade)";
